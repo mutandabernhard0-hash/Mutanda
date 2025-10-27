@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernhard Mutanda — Entrepreneur, Économiste et Visionnaire</title>
+    <meta name="description" content="Bernhard Mutanda est un entrepreneur, économiste et visionnaire engagé dans la transformation socio-économique de l'Afrique.">
+    <meta name="keywords" content="Bernhard Mutanda, économie, entrepreneuriat, leadership, politique, philanthropie, développement personnel, Afrique, coaching, innovation, publications">
+    <meta name="author" content="Bernhard Mutanda">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+</head>
+<body class="bg-cream-50 font-lato">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-screen flex items-center justify-center">
+            <div id="vanta-bg" class="absolute inset-0 z-0"></div>
+            <div class="relative z-10 text-center px-6">
+                <h1 class="text-5xl md:text-7xl font-playfair font-bold text-gold-600 mb-6">
+                    Bernhard Mutanda
+                </h1>
+                <p class="text-xl md:text-2xl text-black mb-8 max-w-3xl mx-auto">
+                    « Transformer les idées en actions, et les rêves en réalités concrètes. »
+                </p>
+                <div class="flex justify-center gap-4">
+                    <a href="#biography" class="btn-primary">Découvrir</a>
+                    <a href="#contact" class="btn-secondary">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Introduction -->
+        <section class="py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-playfair font-bold text-gold-600 mb-6">Vision & Mission</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    Entrepreneur, économiste et docteur en théologie, Bernhard Mutanda incarne une nouvelle génération de leaders africains alliant vision spirituelle, excellence intellectuelle et engagement pratique pour le progrès collectif.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                    <div class="stat-card">
+                        <span class="text-4xl font-bold text-gold-600">4+</span>
+                        <p class="text-gray-600">Entreprises</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="text-4xl font-bold text-gold-600">100%</span>
+                        <p class="text-gray-600">Engagement</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="text-4xl font-bold text-gold-600">∞</span>
+                        <p class="text-gray-600">Vision</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="text-4xl font-bold text-gold-600">1</span>
+                        <p class="text-gray-600">Mission</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preview Sections -->
+        <section class="py-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <a href="biographie.html" class="preview-card bg-black text-white">
+                <i data-feather="user" class="w-12 h-12 mb-4"></i>
+                <h3 class="text-2xl font-playfair mb-2">Biographie</h3>
+                <p>Parcours académique et professionnel</p>
+            </a>
+            <a href="projets.html" class="preview-card bg-gold-600 text-black">
+                <i data-feather="briefcase" class="w-12 h-12 mb-4"></i>
+                <h3 class="text-2xl font-playfair mb-2">Projets</h3>
+                <p>Initiatives entrepreneuriales</p>
+            </a>
+            <a href="citations.html" class="preview-card bg-white text-black border border-black">
+                <i data-feather="message-square" class="w-12 h-12 mb-4"></i>
+                <h3 class="text-2xl font-playfair mb-2">Citations</h3>
+                <p>Pensées inspirantes</p>
+            </a>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xd4af37,
+            backgroundColor: 0xf8f5ee
+        });
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>

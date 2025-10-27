@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --cream: #f8f5ee;
+    --black: #1a1a1a;
+    --gold: #d4af37;
+}
+
+/* Tailwind Custom Colors */
+@layer utilities {
+    .bg-cream-50 {
+        background-color: var(--cream);
+    }
+    .text-gold-600 {
+        color: var(--gold);
+    }
+    .bg-gold-600 {
+        background-color: var(--gold);
+    }
+    .border-gold-600 {
+        border-color: var(--gold);
+    }
+    .font-playfair {
+        font-family: 'Playfair Display', serif;
+    }
+    .font-lato {
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+body {
+    @apply font-lato text-black;
+}
+
+/* Buttons */
+.btn-primary {
+    @apply bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition duration-300;
+}
+
+.btn-secondary {
+    @apply bg-transparent border-2 border-black text-black px-6 py-3 rounded-full font-medium hover:bg-black hover:text-white transition duration-300;
+}
+
+/* Cards */
+.preview-card {
+    @apply p-8 rounded-lg shadow-lg transition duration-500 transform hover:scale-105 flex flex-col items-center justify-center text-center min-h-[300px];
+}
+
+.stat-card {
+    @apply bg-white p-6 rounded-lg shadow-md text-center;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Back to top button */
+.back-to-top {
+    @apply fixed bottom-8 right-8 bg-gold-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition duration-300;
+}
+
+.back-to-top.visible {
+    @apply opacity-100 visible;
+}
